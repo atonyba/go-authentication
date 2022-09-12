@@ -24,6 +24,7 @@ func main() {
 		TenantName:         os.Getenv("TENANT_NAME"),
 		TenantId:           os.Getenv("TENANT_ID"),
 		PolicyName:         os.Getenv("POLICY_NAME"),
+		RedirectUri:        os.Getenv("AUTH_REDIRECTURI"),
 		B2cClientId:        os.Getenv("B2C_CLIENTID"),
 		B2cClientSecret:    os.Getenv("B2C_CLIENTSECRET"),
 	}
