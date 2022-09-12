@@ -46,14 +46,6 @@ func (auth *GitHubProvider) Verify(w http.ResponseWriter, r *http.Request) {
 	log.Println("Token:", reqToken)
 }
 
-func validateSignature(token string){
-
-}
-
-func validateClaims(token string){
-	
-}
-
 func (auth *GitHubProvider) Complete(w http.ResponseWriter, r *http.Request) {
 	code := r.FormValue("code")
 	state := r.FormValue("state")
